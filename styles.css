@@ -1,0 +1,14 @@
+body {
+    margin : 0;
+    padding: 0;
+}
+.container {
+    background-color: brown;
+    padding: 17px;
+}
+
+.item {
+    background-color: coral;
+    margin: 10px;
+    padding: 7px;
+}
