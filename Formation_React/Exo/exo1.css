@@ -1,0 +1,124 @@
+:root {
+    --dark-orange :#E8351E;
+    --light-grey: #fafafa;
+    --white-color:#FFF;
+    --soft-dark: #5e5e5e;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+
+nav {
+    //*background-color: #E8351E;*/
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+header {
+    background: var(--soft-dark);
+}
+footer {
+    background: var(--soft-dark);
+    padding: 10px;
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 15px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+nav a:hover {
+    background-color: var(--dark-orange);
+}
+
+ .section-one{
+        /*ckground-color: blue;*/
+        margin: 20px;
+        padding: 20px;
+    }
+    .card{
+        border-radius: 7px;
+        box-shadow: 0 0 23px var(--light-grey);
+        margin-bottom: 15px;
+        
+
+    }
+    .card-header{
+        color: var(--white-color);
+        text-align: center;
+        border-radius: 7px 7px 0 0;
+        padding: 10px;
+        text-transform: uppercase;
+        background-color: var(--dark-orange);
+    }
+
+    .card-footer{
+        color: var(--white-color);
+        text-align: center;
+        border-radius: 0 0 7px 7px;
+        padding: 10px;
+        text-transform: uppercase;
+        background-color: var(--dark-orange);
+    }
+    .card-body{
+        padding: 15px;
+        text-align: center;
+        background-color: white;
+    }
+
+@media screen and (min-width : 800px) {
+    /* Pour le menu */
+    nav ul {
+    display: flex;
+    justify-content: space-around;
+    }
+    nav ul li {
+        flex-grow: 1;
+    }
+    nav ul li:nth-child(3){
+        order:1;
+    }
+    }
+    @media screen and (min-width:800px) {
+          /* Pour le body */
+    .section-one {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        padding: 0;
+        
+    }
+    .card{
+        margin: 0;
+        flex-basis: 32%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-body{
+        flex-grow: 1;
+    }
+        
+    }
+
+   
