@@ -38,6 +38,13 @@ header {
 footer {
     background: var(--soft-dark);
     padding: 10px;
+    margin-top: 20px;
+}
+
+.Copyright{
+    padding: 25px;
+    color: var(--white-color);
+
 }
 
 nav a {
@@ -51,7 +58,6 @@ nav a {
 nav a:hover {
     background-color: var(--dark-orange);
 }
-
  .section-one{
         /*ckground-color: blue;*/
         margin: 20px;
@@ -62,7 +68,6 @@ nav a:hover {
         box-shadow: 0 0 23px var(--light-grey);
         margin-bottom: 15px;
         
-
     }
     .card-header{
         color: var(--white-color);
@@ -99,9 +104,6 @@ nav a:hover {
     nav ul li:nth-child(3){
         order:1;
     }
-    }
-    @media screen and (min-width:800px) {
-          /* Pour le body */
     .section-one {
         display: flex;
         justify-content: center;
@@ -118,7 +120,45 @@ nav a:hover {
     .card-body{
         flex-grow: 1;
     }
-        
+    .section-Two{
+        flex-direction: row;
+        height: 400px;
+        border: 1px solid var(--soft-dark);
+        padding: 10px;
     }
+    .selected{
+        flex-grow: 1;
+    }
+    .section-three {
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-color: #E8351E;
+       
+    }
+    article {
+    flex-basis: 46%;
+    border: 1px solid var(--soft-dark);
+    background-color: #fff;
+    margin: 20px;
+    padding: 10px;
+    }
+}
+    
+.section-Two div {
+    background-color:#E8351E;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    color: beige;
+}
+.section-Two div:hover {
+    background-color:var(--soft-dark);
+}
+.selected {
+    flex-basis: 200px;
+}
 
    
